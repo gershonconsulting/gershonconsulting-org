@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gershonconsulting.org/sitemap.xml
