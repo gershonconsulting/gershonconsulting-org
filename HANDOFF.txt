@@ -1,0 +1,96 @@
+================================================================
+HANDOFF.txt  -  gershonconsulting-org
+Written by: Claude (nightly run) - token-limit handoff protocol
+Date: 2026-10-22 (night of 2026-10-21 ET)
+Reason: every repo must carry a handoff so another AI can continue
+        from this file alone.
+================================================================
+
+0. WHO YOU ARE READING THIS
+----------------------------------------------------------------
+You are an AI assistant taking over this repository for Olivier Attia,
+founder / CTO of Gershon Consulting LLC.
+
+Read the MASTER HANDOFF first:
+  github.com/gershonconsulting/memory -> HANDOFF.txt
+
+CRITICAL OPERATING RULES:
+  * Olivier does NOT use a terminal, CLI, git or PowerShell. Never give
+    him commands or 'just run this' steps.
+  * He does NOT upload/download/move files. YOU find the route.
+  * End every actionable reply with:
+      GREEN CHECK = ready for him to test (+ link)
+      RED CROSS   = something still to do (+ exactly 3 options he can
+                    action - never a CLI step)
+  * Executors: Ariel = code/repo work. Charles = Chrome extension and web
+    admin panels (Cloudflare, GitHub settings, DNS, publishing).
+
+1. WHAT THIS REPO IS
+----------------------------------------------------------------
+Product / site name : gershonconsulting.org - Gershon Consulting Insights outlet
+Live URL            : https://gershonconsulting.org (CNAME file in repo)
+What it does        : Small static site: index.html (about 6 KB), robots.txt,
+                      sitemap.xml and a multilingual /articles/ hub
+                      (EN/FR/ES/DE/IT/PT) used for SEO / thought-leadership
+                      articles that funnel to gershonconsulting.com.
+Who uses it         : Prospective clients; part of the 2026-10-11 'outlet'
+                      site family.
+
+2. STACK AND DEPLOY ROUTE
+----------------------------------------------------------------
+Language / framework: Plain HTML, no build step, no package.json.
+Hosting             : GitHub Pages serving main directly (per PUBLISHING.md
+                      and CNAME). Not the Hostinger FTP default.
+DNS / registrar     : Tierra.net; Cloudflare (unverified for this domain).
+Deploy method       : Commit to main = live. No .github/workflows in the repo
+                      (checked via root listing 2026-10-22; folder absent).
+Default branch      : main
+How to ship a change: Branch, PR, merge to main. For articles follow
+                      PUBLISHING.md: copy articles/_template.html to
+                      articles/<lang>/<slug>.html, fill {{PLACEHOLDERS}}, add
+                      card between the ARTICLES:<lang>:START/END comments in
+                      articles/index.html, add URL to sitemap.xml.
+Secrets / env vars  : None.
+
+3. RECENTLY DONE  [DONE]
+----------------------------------------------------------------
+- 2026-10-11 Initial site and articles hub created.
+- 2026-10-22 'Publish practical US sales hire versus partner guide' (#1)
+  landed on main (commit bfb8a0b).
+
+4. PENDING  [TODO]
+----------------------------------------------------------------
+- Confirm GitHub Pages custom domain / HTTPS (Charles).
+- Publish more articles and translations (only one EN article so far;
+  unverified for other languages).
+- Inventory / 1Password entries (status unverified).
+
+5. MISSING / NOT BUILT YET
+----------------------------------------------------------------
+- Homepage is a stub (6 KB). No analytics or forms.
+
+6. KNOWN BUGS / NEEDS FIXING
+----------------------------------------------------------------
+- None reported. Live site not tested from this run (unverified).
+
+7. NEXT ACTION - START HERE
+----------------------------------------------------------------
+The single most valuable next step is:
+  -> Load https://gershonconsulting.org and the first article, confirm 200
+     and working CTA links, then publish the next article.
+
+8. GOTCHAS / HARD-WON LESSONS
+----------------------------------------------------------------
+- Sibling outlets share the template: uslaunchhub, gershonconsulting-net,
+  businessexport-org, businessfrance-us, monbusinessauxetatsunis.
+- Branch organic-us-pipeline-guide is left over from merged PR #1; do not
+  delete without Olivier.
+
+9. CONTACT / ESCALATION
+----------------------------------------------------------------
+Olivier Attia - oattia@gmail.com
+Report mailbox - report@gershonconsulting.com
+
+================================================================
+END OF HANDOFF
+================================================================
